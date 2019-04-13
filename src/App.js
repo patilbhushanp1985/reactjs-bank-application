@@ -1,24 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import LoginComponent from './components/login/login-component.js'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className="App-header-left">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Welcome to Xpanxion Bank Application.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+        </header>
+        <header className="App-header-right">
+            <LoginComponent></LoginComponent>
         </header>
       </div>
     );
